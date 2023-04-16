@@ -1,0 +1,13 @@
+.FunButton {
+    border: 3px dashed purple;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: yellow;
+    color: purple;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
