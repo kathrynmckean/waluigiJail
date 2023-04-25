@@ -1,0 +1,81 @@
+.FunButton {
+
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #e1b6ff;
+    color: rgb(96, 10, 96);
+    border: 2px dotted rgb(66, 6, 66);
+}
+
+body {
+    background-color: #e8e1f4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body,
+.header,
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.header {
+    margin: 10px 0px 40px 0px;
+}
+
+.title {
+    font-size: 1.75em;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    font-size: 1em;
+    margin: 0px;
+}
+
+.wahMargin {
+    width: 125px;
+    background-color: #be92de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wahMargin2 {
+    width: 125px;
+    background-color: #be92de;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.WaluigiJail {
+    padding: 20px;
+    height: 400px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfa7ec;
+}
+
+.happyWaluigi {
+    height: 350px;
+}
+
+.WaluigiText {
+    padding: 10px;
+    color: rgb(96, 10, 96);
+}
