@@ -32,6 +32,7 @@ const relieveWaluigiOfHisPain = () => {
         }
         document.getElementById("waluigiPic").src = "https://static.miraheze.org/greatcharacterswiki/4/46/Waluigi.png";
         console.log("you have laid waluigi to rest... he thanks you");
+        counter = 0;
 
     }
 };
