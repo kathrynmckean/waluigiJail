@@ -30,7 +30,8 @@ body,
 
 
 .header {
-    margin: 10px 0px 40px 0px;
+    margin: 10px;
+    height: 150px;
 }
 
 .title {
@@ -46,7 +47,7 @@ h2 {
 
 .wahMargin {
     width: 125px;
-    background-color: #be92de;
+    /* background-color: #be92de; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +55,7 @@ h2 {
 
 .wahMargin2 {
     width: 125px;
-    background-color: #be92de;
+    /* background-color: #be92de; */
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -76,6 +77,13 @@ h2 {
 }
 
 .WaluigiText {
-    padding: 10px;
+    font-size: 17px;
+    padding: 12px;
     color: rgb(96, 10, 96);
+}
+
+.thankYou {
+    font-size: inherit;
+    color: rgb(96, 10, 96);
+    margin: 15px;
 }
