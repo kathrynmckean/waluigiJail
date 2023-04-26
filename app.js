@@ -1,4 +1,5 @@
 let counter = 0;
+let thankYouCounter = 0;
 
 const relieveWaluigiOfHisPain = () => {
     const waluigiTexts = document.querySelectorAll(".WaluigiText");
@@ -15,8 +16,10 @@ const relieveWaluigiOfHisPain = () => {
         const thanksContainer = document.querySelector(".WaluigiJail");
         const thankYou = document.createElement("h2");
         thankYou.setAttribute("class", "thankYou");
+        thankYou.setAttribute('id', 'thankYou')
         thankYou.textContent = "<3 :)  wahhh  :) <3";
         thanksContainer.appendChild(thankYou);
+        thankYouCounter = 1;
     }
 };
 
@@ -29,10 +32,16 @@ const onWaluigiClick = () => {
         const btnContainer = document.querySelector('.header')
         const btn = document.createElement("button");
         btn.setAttribute('class', 'FunButton');
+
         btn.textContent = "click here to heal waluigi"
         btn.addEventListener('click', relieveWaluigiOfHisPain);
         console.log("waaaah you clicked me!");
         btnContainer.appendChild(btn);
+    }
+    if (thankYouCounter >= 1) {
+        const tyRemoval = document.getElementById('thankYou');
+        tyRemoval.parentNode.removeChild(tyRemoval);
+        thankYouCounter = 0;
     }
 
     // if theres 11 wahhhs then return
