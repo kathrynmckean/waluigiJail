@@ -87,3 +87,73 @@ h2 {
     color: rgb(96, 10, 96);
     margin: 15px;
 }
+
+
+@media only screen and (max-width: 525px) {
+
+    .header {
+        font-size: .75em;
+        height: auto;
+        min-height: 100px;
+    }
+
+    .title {
+        margin: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .wahMargin {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    .wahMargin2 {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .WaluigiText {
+        font-size: 10px;
+        padding: 12px;
+        color: rgb(96, 10, 96);
+    }
+
+    .WaluigiJail {
+        height: auto;
+        width: auto;
+        max-width: 500px;
+    }
+
+    .happyWaluigi {
+        height: auto;
+        width: 90%;
+    }
+
+    h1,
+    h2,
+    .title {
+        text-align: center;
+    }
+
+    .thankYou {
+        font-size: 1em;
+        margin: 10px 0px 0px 0px;
+    }
+
+
+
+}

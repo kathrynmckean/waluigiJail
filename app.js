@@ -1,5 +1,24 @@
 let counter = 0;
 let thankYouCounter = 0;
+let btnCounter = 0;
+
+const createBtn = () => {
+    const btnContainer = document.querySelector('.header')
+    const btn = document.createElement("button");
+    btn.setAttribute('class', 'FunButton');
+    btn.setAttribute('id', 'FunButton');
+    btn.textContent = "click here to heal waluigi"
+    btn.addEventListener('click', relieveWaluigiOfHisPain);
+    console.log("waaaah you clicked me!");
+    btnContainer.appendChild(btn);
+    btnCounter++;
+}
+
+const removeBtn = () => {
+    const btnRemoval = document.getElementById('FunButton');
+    btnRemoval.parentNode.removeChild(btnRemoval);
+    btnCounter = 0;
+}
 
 const relieveWaluigiOfHisPain = () => {
     const waluigiTexts = document.querySelectorAll(".WaluigiText");
@@ -19,33 +38,30 @@ const relieveWaluigiOfHisPain = () => {
         thankYou.setAttribute('id', 'thankYou')
         thankYou.textContent = "<3 :)  wahhh  :) <3";
         thanksContainer.appendChild(thankYou);
-        thankYouCounter = 1;
+        thankYouCounter++;
+
+        removeBtn();
     }
 };
 
 
+const removeTY = () => {
+    const tyRemoval = document.getElementById('thankYou');
+    tyRemoval.parentNode.removeChild(tyRemoval);
+    thankYouCounter = 0;
+}
 
 const onWaluigiClick = () => {
     const hasbtn = document.querySelector('.header').querySelector('.FunButton');
 
     if (hasbtn == null) {
-        const btnContainer = document.querySelector('.header')
-        const btn = document.createElement("button");
-        btn.setAttribute('class', 'FunButton');
-
-        btn.textContent = "click here to heal waluigi"
-        btn.addEventListener('click', relieveWaluigiOfHisPain);
-        console.log("waaaah you clicked me!");
-        btnContainer.appendChild(btn);
+        createBtn();
     }
     if (thankYouCounter >= 1) {
-        const tyRemoval = document.getElementById('thankYou');
-        tyRemoval.parentNode.removeChild(tyRemoval);
-        thankYouCounter = 0;
+        removeTY();
     }
 
     // if theres 11 wahhhs then return
-
 
     if (counter >= 10) {
         return
