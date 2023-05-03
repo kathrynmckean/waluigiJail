@@ -27,8 +27,6 @@ body,
 
 }
 
-
-
 .header {
     margin: 10px;
     height: 150px;
@@ -70,10 +68,11 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: #cfa7ec;
+    border-radius: 20px;
 }
 
 .happyWaluigi {
-    height: 350px;
+    max-height: 350px;
 }
 
 .WaluigiText {
@@ -89,7 +88,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 605px) {
 
     .header {
         font-size: .75em;
@@ -115,8 +114,6 @@ h2 {
         justify-content: center;
     }
 
-
-
     .wahMargin2 {
         width: auto;
         display: flex;
@@ -135,7 +132,7 @@ h2 {
     .WaluigiJail {
         height: auto;
         width: auto;
-        max-width: 500px;
+        /* max-width: 500px; */
     }
 
     .happyWaluigi {
@@ -153,7 +150,4 @@ h2 {
         font-size: 1em;
         margin: 10px 0px 0px 0px;
     }
-
-
-
 }

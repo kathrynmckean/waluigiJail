@@ -28,7 +28,7 @@ const relieveWaluigiOfHisPain = () => {
         for (const item of waluigiTexts) {
             item.remove();
         }
-        document.getElementById("waluigiPic").src = "https://static.miraheze.org/greatcharacterswiki/4/46/Waluigi.png";
+        document.getElementById("waluigiPic").src = "happyWa.png";
         console.log("you have laid waluigi to rest... he thanks you");
         counter = 0;
 
@@ -78,6 +78,6 @@ const onWaluigiClick = () => {
     waluigiSpeech2.textContent = "Wahhhhh!!";
     waluigiContainer2.appendChild(waluigiSpeech2);
     counter++;
-    document.getElementById("waluigiPic").src = "https://external-preview.redd.it/3RPB3isFSOx1G-RCny4ABHBGbrr9vOrpeIsgsL3QvJs.png?auto=webp&s=ea2050723da6d99075796c1f57275031c671aade";
+    document.getElementById("waluigiPic").src = "madWa.png";
 
 }
